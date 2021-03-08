@@ -104,7 +104,7 @@
       }
 
     </style>
-    <meta name="apple-mobile-web-app-title" content="Modelaje Independiente" />
+    <meta name="apple-mobile-web-app-title" content="Ernesto Jara Resume" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black_translucent" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -114,7 +114,7 @@
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="applicable-device" content="pc, mobile" />
-    <meta name="keywords" content="modelaje,independiente,paypal,suscripción,perfil">
+    <meta name="keywords" content="Ernesto, Jara, Olveda, CV, Resume, enetojarapro">
     <meta name="language" content="English">
     <meta name="revisit-after" content="1 days">
     <meta name="author" content="Ernesto Jara Olveda">
@@ -434,7 +434,8 @@
       global.onload = function () {
         const btn = document.getElementById('share-button');
         console.log(btn);
-        btn.addEventListener('click', function () {
+        btn.addEventListener('click', function (evt) {
+          evt.preventDefault();
           const shareData = {
             title: 'Ernesto Jara Olveda',
             text: 'I am a JavaScript Developer with 5+ years of experience working as a Full-Stack Developer',
